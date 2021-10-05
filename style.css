@@ -1,0 +1,69 @@
+        html,
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            height: 100%;
+        }
+        
+        .contenedor {
+            /*margin: 5rem;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .calculadora {
+            background: #43C6AC;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F8FFAE, #43C6AC);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 2rem;
+            border-radius: 0.4rem;
+        }
+        
+        .operacion {
+            font-family: 'Press Start 2P', cursive;
+            font-family: 'Open Sans', sans-serif;
+            height: 2rem;
+            border-radius: 0.2rem;
+            border: 0.2rem solid #43C6AC;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .botones {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .boton {
+            font-family: 'Press Start 2P', cursive;
+            font-family: 'Open Sans', sans-serif;
+            border: none;
+            font-size: 1.5rem;
+            margin: 0.15rem;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+            background-color: #fff;
+        }
+        
+        .borrar {
+            background-color: rgb(15, 13, 13);
+            color: #fff;
+        }
+        
+        .igual {
+            grid-column: 1 / span 4;
+            grid-row: 5 / 5;
+            text-align: center;
+            background-color: rgb(194, 64, 64);
+            color: #fff;
+        }
+        
+        .boton:hover {
+            cursor: pointer;
+            color: rgb(15, 201, 9);
+        }
